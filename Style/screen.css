@@ -242,6 +242,13 @@ select {
   text-align: center;
 }
 
+.c-map {
+  margin: var(--global-whitespace-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-height: 670px) {
   .c-message {
     max-width: 30rem;

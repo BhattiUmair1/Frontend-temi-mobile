@@ -197,12 +197,11 @@ select {
     cursor: pointer;
 }
 
-.c-buttonmargin {
-    margin-top: var(--global-whitespace-xxl);
+.c-bottommargin {
+    margin-bottom: var(--global-whitespace-xxl);
 }
 
 .c-call {
-    margin-top: var(--global-whitespace-xxl);
     font-size: 32px;
     border-radius: var(--global-borderRadius);
     border: none;

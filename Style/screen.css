@@ -229,6 +229,13 @@ select {
   fill: var(--global-image-color);
 }
 
+.c-error {
+    display: block;
+    margin: auto;
+    width: 15rem;
+    height: 15rem;
+}
+
 .c-call {
   font-size: 2rem;
   border-radius: var(--global-borderRadius);

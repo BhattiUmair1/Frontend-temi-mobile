@@ -2,6 +2,12 @@
 #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family: "Avenir LT Std";
+    font-weight: normal;
+    src: url("../fonts/AvenirLTStd-Roman.woff2") format("woff2")
+}
+
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/

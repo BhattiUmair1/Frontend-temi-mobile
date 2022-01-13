@@ -1,11 +1,6 @@
-<<<<<<< Updated upstream
 
-const AnimateRobot = function () {
-    let tl = gsap.timeline({
-=======
 const AnimateRobot = function() {
   let tl = gsap.timeline({
->>>>>>> Stashed changes
     defaults: {
       duration: 1,
       ease: 'power1.inOut',
@@ -63,8 +58,5 @@ const AnimateRobot = function() {
   document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM geladen');
     AnimateRobot();
-<<<<<<< Updated upstream
   });
-=======
-  });
->>>>>>> Stashed changes
+

@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 const AnimateRobot = function() {
   let tl = gsap.timeline({
     defaults: {

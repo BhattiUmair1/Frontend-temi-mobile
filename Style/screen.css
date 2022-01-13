@@ -7,31 +7,31 @@
 \*------------------------------------*/
 
 :root {
-    /* colors */
-    --color-green: #22ce99;
-    --color-black: #111111;
-    --color-grey: #282829;
-    
-    /* forms */
-    --global-text-color: var(--color-grey);
-    --global-button-color: var(--color-green);
-    --global-button-text-color: var(--color-black);
+  /* colors */
+  --color-green: #22ce99;
+  --color-black: #111111;
+  --color-grey: #282829;
 
-    /* border radius */
-    --global-borderRadius: var(--global-whitespace-xl);
-    --global-borderWidth: 1px;
+  /* forms */
+  --global-text-color: var(--color-grey);
+  --global-button-color: var(--color-green);
+  --global-button-text-color: var(--color-black);
 
-    /* Baseline settings */
-    --global-baseline: 8px;         
-    --global-whitespace: calc(var(--global-baseline) * 3); /* = 24px */
+  /* border radius */
+  --global-borderRadius: var(--global-whitespace-xl);
+  --global-borderWidth: 1px;
 
-    --global-whitespace-xs: calc(var(--global-baseline) * .5); /* = 4px */
-    --global-whitespace-sm: calc(var(--global-baseline) * 1); /*  = 8px */
-    --global-whitespace-md: calc(var(--global-baseline) * 2); /*  = 16px */
-    --global-whitespace-m: calc(var(--global-baseline) * 3); /*  = 24px */
-    --global-whitespace-lg: calc(var(--global-baseline) * 4); /*  = 32px */
-    --global-whitespace-xl: calc(var(--global-whitespace) * 2); /*  = 48px */
-    --global-whitespace-xxl: calc(var(--global-whitespace) * 3); /*  = 72px */
+  /* Baseline settings */
+  --global-baseline: 8px;
+  --global-whitespace: calc(var(--global-baseline) * 3); /* = 24px */
+
+  --global-whitespace-xs: calc(var(--global-baseline) * 0.5); /* = 4px */
+  --global-whitespace-sm: calc(var(--global-baseline) * 1); /*  = 8px */
+  --global-whitespace-md: calc(var(--global-baseline) * 2); /*  = 16px */
+  --global-whitespace-m: calc(var(--global-baseline) * 3); /*  = 24px */
+  --global-whitespace-lg: calc(var(--global-baseline) * 4); /*  = 32px */
+  --global-whitespace-xl: calc(var(--global-whitespace) * 2); /*  = 48px */
+  --global-whitespace-xxl: calc(var(--global-whitespace) * 3); /*  = 72px */
 }
 
 /*------------------------------------*\
@@ -45,19 +45,19 @@
 */
 
 html {
-    /* POSITIONING */
+  /* POSITIONING */
 
-    /* BOX MODEL */
-    box-sizing: border-box;
+  /* BOX MODEL */
+  box-sizing: border-box;
 
-    /* FONT */
-    color: var(--global-text-color);
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: 'Avenir LT Std', 'Open Sans', Helvetica, arial, sans-serif;
-    font-feature-settings: "zero" 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* FONT */
+  color: var(--global-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Avenir LT Std', 'Open Sans', Helvetica, arial, sans-serif;
+  font-feature-settings: 'zero' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*------------------------------------*\
@@ -71,8 +71,8 @@ Default markup for images to make them responsive
 */
 
 img {
-    max-width: 100%;
-    vertical-align: top;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 /*
@@ -84,121 +84,142 @@ img {
 h1,
 h2,
 h3 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 h1 {
-    font-size: 32px;
-    line-height: 48px;
-    margin: 0 0 24px;
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0 0 24px;
 }
 
 h2 {
-    font-size: 20px;
-    text-align: center;
-    line-height: 40px;
-    margin: 0 0 24px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 0 24px;
 }
 
 h3 {
-    font-size: 26px;
-    line-height: 32px;
-    margin: 0 0 24px;
+  font-size: 26px;
+  line-height: 32px;
+  margin: 0 0 24px;
 }
 
 a {
-    color: var(--global-text-color);
-    text-decoration: none;
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+p {
+  color: var(--global-text-color);
 }
 
 select {
-    width: 100%;
+  width: 100%;
+}
+
+.o-row {
+  position: relative;
+  padding: var(--global-whitespace-md) var(--global-whitespace-md) var(--global-baseline);
 }
 
 .c-app {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - 2 * 1rem);
-    box-sizing: content-box; /* Paddig optellen bij de (max)width ipv. het toevoegen aan de binnenkant */
-    max-width: 25rem; /* Is dit slim...? */
-    margin: 0 auto;
-    padding: 0 2rem 2rem 2rem; /* 32px 32px (in onze huidige font-size) */
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 2 * 1rem);
+  box-sizing: content-box; /* Paddig optellen bij de (max)width ipv. het toevoegen aan de binnenkant */
+  max-width: 25rem; /* Is dit slim...? */
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem; /* 32px 32px (in onze huidige font-size) */
 }
 
 .c-nav {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
-    line-height: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  line-height: 1rem;
 }
 
 .c-logo {
-    padding-left: var(--global-baseline);
+  padding-left: var(--global-baseline);
 }
 
 .c-help {
-    padding-right: var(--global-baseline);
-    padding-left: var(--global-whitespace-xxl);
-    width: 40px;
+  padding-right: var(--global-baseline);
+  padding-left: var(--global-whitespace-xxl);
+  width: 40px;
 }
 
 .c-page {
-    display: block;
-    align-items: center;
-    padding-top: var(--global-whitespace-xxl);
+  display: block;
+  align-items: center;
+  padding-top: var(--global-whitespace-xxl);
 }
 
 .c-robot {
-    display: block;
-    fill: var(--global-button-color);
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 280px;
+  display: block;
+  fill: var(--global-button-color);
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 280px;
 }
 
 .c-robot__shadow {
-    fill: var(--global-button-text-color);
+  fill: var(--global-button-text-color);
+  opacity: 0.1;
+}
+
+.c-robot__admin {
+  --color-robot: var(--color-green);
+  margin: auto;
+  max-width: 300px;
+  fill: var(--color-robot);
 }
 
 @media (min-height: 570px) {
-    .c-robot {
-        max-height: 350px;
-    }
+  .c-robot {
+    max-height: 350px;
+  }
 }
 
 @media (min-height: 670px) {
-    .c-robot {
-        max-height: 400px;
-    }
+  .c-robot {
+    max-height: 400px;
+  }
+
+  .c-robot__admin {
+    max-width: 350px;
+  }
 }
 
 .c-qrcode {
-    display: flex;
-    justify-content: center;
-    margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
 }
 
 .c-button-flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .c-button {
-    margin-top: var(--global-whitespace-m);
-    font-size: 32px;
-    border-radius: var(--global-borderRadius);
-    border: none;
-    background-color: var(--global-button-color);
-    color: var(--global-button-text-color);
-    min-width: 270px;
-    min-height: 60px;
-    outline: none;
-    cursor: pointer;
+  margin-top: var(--global-whitespace-m);
+  font-size: 32px;
+  border-radius: var(--global-borderRadius);
+  border: none;
+  background-color: var(--global-button-color);
+  color: var(--global-button-text-color);
+  min-width: 270px;
+  min-height: 60px;
+  outline: none;
+  cursor: pointer;
 }
 
 .c-bottommargin {
-    margin-bottom: var(--global-whitespace-xxl);
+  margin-bottom: var(--global-whitespace-xxl);
 }
 
 .c-done {
@@ -209,13 +230,35 @@ select {
 }
 
 .c-call {
-    font-size: 32px;
-    border-radius: var(--global-borderRadius);
-    border: none;
-    background-color: var(--global-button-color);
-    color: var(--global-button-text-color);
-    min-width: 246px;
-    min-height: 100px;
-    outline: none;
-    cursor: pointer;
+  font-size: 32px;
+  border-radius: var(--global-borderRadius);
+  border: none;
+  background-color: var(--global-button-color);
+  color: var(--global-button-text-color);
+  min-width: 246px;
+  min-height: 100px;
+  outline: none;
+  cursor: pointer;
+}
+
+.c-message {
+  max-width: 12rem;
+  padding: var(--global-whitespace-sm);
+  font-size: 1.2rem;
+  margin: auto;
+  text-align: center;
+}
+
+.c-map {
+  margin: var(--global-whitespace-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-height: 670px) {
+  .c-message {
+    max-width: 30rem;
+    font-size: 2rem;
+  }
 }

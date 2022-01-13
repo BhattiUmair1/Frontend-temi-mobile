@@ -53,7 +53,7 @@ html {
 
   /* FONT */
   color: var(--global-text-color);
-  font-size: 16px;
+  font-size: 100%;
   line-height: 1.5;
   font-family: 'Avenir LT Std', 'Open Sans', Helvetica, arial, sans-serif;
   font-feature-settings: 'zero' 1;
@@ -89,22 +89,22 @@ h3 {
 }
 
 h1 {
-  font-size: 32px;
-  line-height: 48px;
-  margin: 0 0 24px;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 0 0 var(--global-whitespace-m);
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
-  line-height: 40px;
-  margin: 0 0 24px;
+  line-height: 2.5rem;
+  margin: 0 0 var(--global-whitespace-m);
 }
 
 h3 {
-  font-size: 26px;
-  line-height: 32px;
-  margin: 0 0 24px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin: 0 0 var(--global-whitespace-m);
 }
 
 a {
@@ -174,23 +174,23 @@ select {
 .c-robot__admin {
   --color-robot: var(--color-green);
   margin: auto;
-  max-width: 300px;
+  max-width: 18.7rem;
   fill: var(--color-robot);
 }
 
-@media (min-height: 570px) {
+@media (min-height: 35.6rem) {
   .c-robot {
     max-height: 22.5rem;
   }
 }
 
-@media (min-height: 670px) {
+@media (min-height: 41.8rem) {
   .c-robot {
     max-height: 25rem;
   }
 
   .c-robot__admin {
-    max-width: 350px;
+    max-width: 21.8rem;
   }
 }
 
@@ -256,7 +256,7 @@ select {
   align-items: center;
 }
 
-@media (min-height: 670px) {
+@media (min-height: 41.8rem) {
   .c-message {
     max-width: 30rem;
     font-size: 2rem;

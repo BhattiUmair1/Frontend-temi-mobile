@@ -1,4 +1,6 @@
-let tl = gsap.timeline({
+
+const AnimateRobot = function () {
+    let tl = gsap.timeline({
     defaults: {
       duration: 1,
       ease: 'power1.inOut',
@@ -50,7 +52,10 @@ let tl = gsap.timeline({
       },
       '<'
     );
+}
+
   
   document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM geladen');
+    AnimateRobot();
   });

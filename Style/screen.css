@@ -16,6 +16,7 @@
   --global-text-color: var(--color-grey);
   --global-button-color: var(--color-green);
   --global-button-text-color: var(--color-black);
+  --global-image-color: var(--color-green);
 
   /* border radius */
   --global-borderRadius: var(--global-whitespace-xl);
@@ -128,8 +129,8 @@ select {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 2 * 1rem);
-  box-sizing: content-box; /* Paddig optellen bij de (max)width ipv. het toevoegen aan de binnenkant */
-  max-width: 25rem; /* Is dit slim...? */
+  box-sizing: content-box;
+  max-width: 25rem;
   margin: 0 auto;
   padding: 0 2rem 2rem 2rem; /* 32px 32px (in onze huidige font-size) */
 }
@@ -148,7 +149,7 @@ select {
 .c-help {
   padding-right: var(--global-baseline);
   padding-left: var(--global-whitespace-xxl);
-  width: 40px;
+  width: 2.5rem;
 }
 
 .c-page {
@@ -159,14 +160,14 @@ select {
 
 .c-robot {
   display: block;
-  fill: var(--global-button-color);
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 280px;
+  fill: var(--global-image-color);
+  margin: auto;
+  max-height: 17.5rem;
 }
 
 .c-robot__shadow {
-  fill: var(--global-button-text-color);
+  --color-shadow: var(--color-black);
+  fill: var(--color-shadow);
   opacity: 0.1;
 }
 
@@ -179,13 +180,13 @@ select {
 
 @media (min-height: 570px) {
   .c-robot {
-    max-height: 350px;
+    max-height: 22.5rem;
   }
 }
 
 @media (min-height: 670px) {
   .c-robot {
-    max-height: 400px;
+    max-height: 25rem;
   }
 
   .c-robot__admin {
@@ -196,7 +197,7 @@ select {
 .c-qrcode {
   display: flex;
   justify-content: center;
-  margin-top: 64px;
+  margin-top: calc(var(--global-whitespace-lg) * 2);
 }
 
 .c-button-flex {
@@ -207,13 +208,13 @@ select {
 
 .c-button {
   margin-top: var(--global-whitespace-m);
-  font-size: 32px;
+  font-size: 2rem;
   border-radius: var(--global-borderRadius);
   border: none;
   background-color: var(--global-button-color);
   color: var(--global-button-text-color);
-  min-width: 270px;
-  min-height: 60px;
+  min-width: 17rem;
+  min-height: 4rem;
   outline: none;
   cursor: pointer;
 }
@@ -223,20 +224,19 @@ select {
 }
 
 .c-done {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    fill: var(--global-button-color);
+  display: block;
+  margin: auto;
+  fill: var(--global-image-color);
 }
 
 .c-call {
-  font-size: 32px;
+  font-size: 2rem;
   border-radius: var(--global-borderRadius);
   border: none;
   background-color: var(--global-button-color);
   color: var(--global-button-text-color);
-  min-width: 246px;
-  min-height: 100px;
+  min-width: 15rem;
+  min-height: 7rem;
   outline: none;
   cursor: pointer;
 }

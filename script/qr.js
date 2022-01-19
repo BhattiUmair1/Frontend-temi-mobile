@@ -1,4 +1,4 @@
-code = 'c78be457-1e1c-49ec-9271-4dc05b3da335';
+let code;
 
 const qrcode = (code) => {
   console.log(code);
@@ -13,7 +13,16 @@ const qrcode = (code) => {
   });
 };
 
+const init = function () {
+  console.log("init works")
+  const params = new URLSearchParams(window.location.search)
+  let code = params.get('qrcode')
+  console.log(code)
+  qrcode(code)
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   console.log('DOM geladen');
   qrcode(code);
+  init();
 });
